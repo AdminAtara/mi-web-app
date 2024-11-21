@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Gestión</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="gestiones_box">
+      <div class="gestiones-header">
+        <span>Registrar Gestión</span>
+      </div>
+
+      <form id="gestion-form">
+        <div class="input_box">
+          <input type="text" id="cliente_unico" class="input-field" required>
+          <label for="cliente_unico" class="label">Cliente Único</label>
+        </div>
+
+        <div class="input_box">
+          <input type="text" id="nombre" class="input-field" required>
+          <label for="nombre" class="label">Nombre del Cliente</label>
+        </div>
+
+        <div class="input_box">
+          <input type="tel" id="telefono" class="input-field" required>
+          <label for="telefono" class="label">Teléfono</label>
+        </div>
+
+        <div class="input_box">
+          <select id="tipo_gestion" class="input-field" required>
+            <option value="">Seleccione el tipo de gestión</option>
+            <option value="Llamada al Titular">Llamada al Titular</option>
+            <option value="Llamada al Aval">Llamada al Aval</option>
+            <option value="Llamada Referencia">Llamada Referencia</option>
+            <option value="Llamada Tercero">Llamada Tercero</option>
+            <option value="Carteo">Carteo</option>
+            <option value="Recado">Recado</option>
+          </select>
+        </div>
+
+        <div class="input_box">
+          <textarea id="descripcion" class="input-field" rows="4" placeholder="Descripción de la gestión" required></textarea>
+        </div>
+
+        <div class="input_box">
+          <button type="submit" class="input-submit">Registrar Gestión</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Llamar al script específico de esta página -->
+  <script src="registrar_gestion.js"></script>
+</body>
+</html>
